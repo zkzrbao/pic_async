@@ -1,0 +1,19 @@
+1. node版本： 18.14.0
+2. 开发运行：npm run dev  打包：num run build
+3. 发布版本的时候需要把composables/useApi.js 文件中的
+  if (!process.server) {
+    serverUrl='/myapi'
+  }
+
+
+代码注释掉
+4.app.config.ts 存放应用配置，可以在页面中通过 const $globals = useAppConfig(); 来获取
+
+5. 组件库 element plus https://element-plus.org/zh-CN/
+
+nuxt3 中文文档： https://www.nuxtjs.org.cn/getting-started/installation.html
+nuxt3 英文文档： https://nuxt.com/docs/guide/concepts/auto-imports
+
+nvm 安装地址： https://github.com/coreybutler/nvm-windows/releases
+nvm ls  
+nvm use 
